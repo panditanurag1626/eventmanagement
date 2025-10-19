@@ -1,0 +1,272 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>signUp</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <style>
+       body{
+        margin: 0;
+        padding: 0;
+        /* font-family: 'Times New Roman', Times, serif; */
+      }
+      h1{
+        text-align: center;
+        margin-top: 10px;
+      }
+      .var{
+        /* justify-self: center; */
+        margin-top: 50px;
+        /* justify-items: center; */
+        align-items: center;
+       
+      }
+      .sub{
+        /* background-color: rgb(60, 37, 131); */
+        text-decoration: none;
+        border-radius: 50px;
+        border-radius:150px;
+        padding: 15px;
+        background-color: azure;
+        color: black;
+      }
+      .copy{
+    bottom: 0;
+    background-color: azure;
+    width: 100%;
+    text-align: center;
+    font-size: 15px;
+    font-weight: bold;
+    padding: 15px 20px;
+    width: 100%;
+}
+     select {
+                  
+              padding: 10px;
+              border-radius: 5px;
+              border: 2px solid black;
+              margin-top: 20px;
+              text-transform: uppercase;
+        }                 
+        option {
+            text-transform: uppercase;
+                        
+        }
+           footer {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+            /* background-color: #3e249c; */
+            /* color: goldenrod; */
+            font-family: Arial, sans-serif;
+            margin-top: 30px;
+          }
+          footer .hero {
+            flex: 1 1 100px;
+            margin: 10px;
+          }
+          
+          footer .hero h2 {
+            font-size: 20px;
+            margin-bottom: 15px;
+            /* color: #b36c16; */
+            display: inline-block;
+            cursor: pointer;
+          }
+          footer p{
+              cursor: pointer;
+          }
+                         
+          /* Mobile Responsive Media Queries */
+@media (max-width: 768px) {
+  form {
+    width: 90%;
+    margin: auto;
+  }
+
+  input, select {
+    width: 100%;
+    margin-top: 10px;
+  }
+
+  .sub {
+    display: block;
+    width: 100%;
+    margin: 10px 0;
+    text-align: center;
+  }
+
+  footer {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  footer .hero {
+    flex: 1 1 100%;
+    margin: 10px 0;
+  }
+}
+
+@media (max-width: 480px) {
+  h1 {
+    font-size: 22px;
+  }
+
+  input, select {
+    font-size: 14px;
+    padding: 8px;
+  }
+
+  .sub {
+    padding: 10px;
+    font-size: 14px;
+  }
+
+  footer h2 {
+    font-size: 18px;
+  }
+
+  footer p {
+    font-size: 14px;
+  }
+
+  .copy h3 {
+    font-size: 12px;
+  }
+}
+            
+       </style>
+  </head>
+  <body>
+    <!-- NAVBAR-->
+     <div class="container-fluid">
+      <div class="row">
+        <nav class="navbar navbar-expand-lg bg-dark" data-bs-theme="dark"  style=" background: linear-gradient(10deg,#141146);">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">
+      <img src="1logo.png" alt="logo" width="80" height="50">
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <form class="d-flex w-75" role="search">
+        <input class="form-control me-2 " type="search" placeholder="Search" aria-label="Search"/>
+        <button class="btn btn-outline-success" type="submit">Search</button>
+      </form>
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+        </li>
+          <li class="nav-item">
+          <a class="nav-link" href="signIn.html">SingIn</a>
+        </li>
+          <li class="nav-item">
+          <a class="nav-link" href="signUp.html">SingUp</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="about.html">About</a>
+        </li>
+             <li class="nav-item">
+          <a class="nav-link" href="event.html">Events</a>
+        </li>
+         </li>
+             <li class="nav-item">
+          <a class="nav-link" href="contact.html">Contact.US</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+      </div>
+    </div>
+    
+      </div>
+    </div>
+     <div class="var">
+     <form style="text-align: center;">
+      <h1>SignUp</h1>
+      <!-- <div class="name"> -->
+        <label for="entername">Enter Your Name:</label>
+        <input type="text"  placeholder="Enter Your Name" required style="border: 2px solid black;"><br><br>
+        
+      <!-- </div> -->
+         <!-- <div class="email"> -->
+        <label for="enteremail">Enter Your Email:</label>
+        <input type="email" placeholder="Enter Your Email" required style="border: 2px solid black;"><br><br>
+      <!-- </div> -->
+        <!-- <div class="phon"> -->
+        <label for="enterphone">Enter Your Contact Number:</label>
+        <input type="email" placeholder="Enter Your Contact Number" required style="border: 2px solid black;"><br><br>
+      <!-- </div> -->
+        <!-- <div class="date1"> -->
+        <label for="date"> Enter Your Booking Date:</label>
+        
+      <input type="text" size="3" placeholder="Day"    style="border: 2px solid black;"/>
+      <input type="text" size="3" placeholder="Month" style="border: 2px solid black;" />
+       <input type="text"  size="5" placeholder="Year" style="border: 2px solid black;" />
+       <i>(DD-MM-YYYY)</i><br>
+       <div class="option"></div>
+          <select>
+              <option> ---- What are you booking the event for? ---- </option>
+                  <option>Birthday party</option>
+                  <option>Engagement ceremony</option>
+                  <option>Wedding</option>
+                  <option>Retirement party</option>
+                  <option>Other</option>
+                    </select>
+                    <br>
+                    <select>
+                          <option> ----- Booking Charging Payment 
+                              Method----- </option>
+                              <option>GOOGLE PAY</option>
+                              <option>PHONE PAY</option>
+                              <option>CASE</option>
+                              <option>UPI</option>
+                              <option>OTHER </option>
+          </select><br>
+      <!-- </div> -->
+      <!-- <div class="btn"> -->
+        <div style="margin-top: 20px;">
+          <!-- <button class="sub">Submit</button> -->
+          <!-- <button class="sub">Cancel</button> -->
+          <a href="index.html" class="sub">Submit</a>
+          <a href="index.html" class="sub">Cancel</a>
+        </div>
+          <!--FOOTER-->
+          <footer>
+            <div class="hero">
+            <h2>EvenTor</h2>
+            <p>About Us</p>
+            <P>Tearm</P>
+            <P>Contact us</P>
+            
+         </div>
+         <div class="hero">
+            <h2>Service</h2>
+            <P>Event Management</P>
+            <p>Design & Conecpt</p>
+            <p>Event Production</p>
+            <p>Event Sourcing</p>
+         </div>
+         <div class="hero">
+            <h2>Social</h2>
+            <p>Facebook</p>
+            <p>Twiter</p>
+            <p>Instagram</p>
+            <p>Linkedin</p>
+         </div>
+         <div class="hero">
+            <h2>Contact US</h2>
+            <p>Mob: 8090998841</p>
+            <p>Email:panditanurag638@gmail.com</p>
+            <p>Address: Ashwan Mishran Rampur Jaunpur Uttar Pardesh</p>
+         </div>
+            <div class="copy">
+            <h3><i>&copy; Copyright Powered by Anurag Mishra Devloper </i></h3>
+    </div>
+          </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+  </body>
+</html>
