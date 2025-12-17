@@ -1,272 +1,359 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>signUp</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
-    <style>
-       body{
-        margin: 0;
-        padding: 0;
-        /* font-family: 'Times New Roman', Times, serif; */
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>signUp</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      /* background: url(wed12.png); */
+      /* font-family: 'Times New Roman', Times, serif; */
+      background: url(signup1.png);
+    }
+
+    h1 {
+      text-align: center;
+      margin-top: 10px;
+    }
+
+    .var {
+      max-width: 480px;
+      background: transparent;
+      backdrop-filter: blur(12px);
+      border-radius: 20px;
+      padding: 35px;
+      margin: 80px auto;
+      box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
+      color: black;
+      border: 1px solid rgba(255, 255, 255, 0.2);
+      transition: 0.3s;
+    }
+
+    .var:hover {
+      box-shadow:
+        -5px -5px 20px #de2ad2,
+        5px 5px 20px #15e3e3,
+        -5px 5px 25px #f2bf06,
+        5px -5px 25px #0af03c;
+    }
+
+    .inp {
+      width: 100%;
+      padding: 12px;
+      border-radius: 10px;
+      border: none;
+      margin-top: 8px;
+      margin-bottom: 18px;
+      outline: none;
+      font-size: 15px;
+    }
+
+    .sec {
+      width: 100%;
+      padding: 12px;
+      border-radius: 10px;
+      border: none;
+      margin-top: 8px;
+      margin-bottom: 18px;
+      outline: none;
+      font-size: 15px;
+    }
+
+    .sub {
+      text-decoration: none;
+      border-radius: 50px;
+      border-radius: 150px;
+      padding: 15px;
+      background-color: white;
+      color: black;
+    }
+
+    .copy {
+      bottom: 0;
+      background-color: white;
+      width: 100%;
+      text-align: center;
+      font-size: 15px;
+      font-weight: bold;
+      padding: 15px 20px;
+      width: 100%;
+    }
+
+    select {
+
+      padding: 10px;
+      border-radius: 5px;
+      border: 2px solid black;
+      margin-top: 20px;
+      text-transform: uppercase;
+    }
+
+    option {
+      text-transform: uppercase;
+
+    }
+
+    footer {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-evenly;
+      background-color: white;
+      font-family: Arial, sans-serif;
+      margin-top: 30px;
+    }
+
+    footer .hero {
+      flex: 1 1 100px;
+      margin: 10px;
+    }
+
+    footer .hero h2 {
+      font-size: 20px;
+      margin-bottom: 15px;
+      /* color: #b36c16; */
+      display: inline-block;
+      cursor: pointer;
+    }
+
+    footer p {
+      cursor: pointer;
+    }
+
+    /* Extra small devices (<576px) */
+    @media (max-width: 576px) {
+      .var {
+        width: 90%;
+        margin-left: 5%;
+        padding: 20px;
       }
-      h1{
-        text-align: center;
+
+      h1 {
+        font-size: 24px;
+      }
+
+      label {
+        font-size: 14px;
+      }
+
+      input,
+      select {
+        width: 100%;
+        margin-bottom: 10px;
+        padding: 8px;
+      }
+
+      .sub {
+        width: 100%;
         margin-top: 10px;
       }
-      .var{
-        /* justify-self: center; */
-        margin-top: 50px;
-        /* justify-items: center; */
-        align-items: center;
-       
+
+      footer {
+        flex-direction: column;
+        text-align: center;
       }
-      .sub{
-        /* background-color: rgb(60, 37, 131); */
-        text-decoration: none;
-        border-radius: 50px;
-        border-radius:150px;
-        padding: 15px;
-        background-color: azure;
-        color: black;
+
+      footer .hero {
+        margin: 15px 0;
       }
-      .copy{
-    bottom: 0;
-    background-color: azure;
-    width: 100%;
-    text-align: center;
-    font-size: 15px;
-    font-weight: bold;
-    padding: 15px 20px;
-    width: 100%;
-}
-     select {
-                  
-              padding: 10px;
-              border-radius: 5px;
-              border: 2px solid black;
-              margin-top: 20px;
-              text-transform: uppercase;
-        }                 
-        option {
-            text-transform: uppercase;
-                        
-        }
-           footer {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: space-evenly;
-            /* background-color: #3e249c; */
-            /* color: goldenrod; */
-            font-family: Arial, sans-serif;
-            margin-top: 30px;
-          }
-          footer .hero {
-            flex: 1 1 100px;
-            margin: 10px;
-          }
-          
-          footer .hero h2 {
-            font-size: 20px;
-            margin-bottom: 15px;
-            /* color: #b36c16; */
-            display: inline-block;
-            cursor: pointer;
-          }
-          footer p{
-              cursor: pointer;
-          }
-                         
-          /* Mobile Responsive Media Queries */
-@media (max-width: 768px) {
-  form {
-    width: 90%;
-    margin: auto;
-  }
+    }
 
-  input, select {
-    width: 100%;
-    margin-top: 10px;
-  }
+    /* Small devices (576px–768px) */
+    @media (min-width: 576px) and (max-width: 768px) {
+      .var {
+        width: 80%;
+        margin-left: 10%;
+      }
 
-  .sub {
-    display: block;
-    width: 100%;
-    margin: 10px 0;
-    text-align: center;
-  }
+      .sub {
+        padding: 10px 15px;
+      }
 
-  footer {
-    flex-direction: column;
-    text-align: center;
-  }
+      footer {
+        flex-wrap: wrap;
+        text-align: center;
+      }
+    }
 
-  footer .hero {
-    flex: 1 1 100%;
-    margin: 10px 0;
-  }
-}
+    /* Medium devices (768px–992px) */
+    @media (min-width: 768px) and (max-width: 992px) {
+      .var {
+        width: 65%;
+        margin-left: 17.5%;
+      }
+    }
+  </style>
+</head>
 
-@media (max-width: 480px) {
-  h1 {
-    font-size: 22px;
-  }
-
-  input, select {
-    font-size: 14px;
-    padding: 8px;
-  }
-
-  .sub {
-    padding: 10px;
-    font-size: 14px;
-  }
-
-  footer h2 {
-    font-size: 18px;
-  }
-
-  footer p {
-    font-size: 14px;
-  }
-
-  .copy h3 {
-    font-size: 12px;
-  }
-}
-            
-       </style>
-  </head>
-  <body>
-    <!-- NAVBAR-->
-     <div class="container-fluid">
-      <div class="row">
-        <nav class="navbar navbar-expand-lg bg-dark" data-bs-theme="dark"  style=" background: linear-gradient(10deg,#141146);">
+<body>
+  <!-- NAVBAR-->
   <div class="container-fluid">
-    <a class="navbar-brand" href="#">
-      <img src="1logo.png" alt="logo" width="80" height="50">
-    </a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <div class="row">
+      <nav class="navbar navbar-expand-lg bg-dark" data-bs-theme="dark"
+        style=" background: linear-gradient(10deg,#141146);">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">
+            <img src="1logo.png" alt="logo" width="80" height="50">
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+            aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <form class="d-flex w-75" role="search">
-        <input class="form-control me-2 " type="search" placeholder="Search" aria-label="Search"/>
-        <button class="btn btn-outline-success" type="submit">Search</button>
-      </form>
-      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-        <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="index.html">Home</a>
-        </li>
-          <li class="nav-item">
-          <a class="nav-link" href="signIn.html">SingIn</a>
-        </li>
-          <li class="nav-item">
-          <a class="nav-link" href="signUp.html">SingUp</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="about.html">About</a>
-        </li>
-             <li class="nav-item">
-          <a class="nav-link" href="event.html">Events</a>
-        </li>
-         </li>
-             <li class="nav-item">
-          <a class="nav-link" href="contact.html">Contact.US</a>
-        </li>
-      </ul>
+              <input class="form-control me-2 " type="search" placeholder="Search" aria-label="Search" />
+              <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="signIn.html">SingIn</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="signUp.html">SingUp</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="about.html">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="event.html">Events</a>
+              </li>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contact.html">Contact.US</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
     </div>
   </div>
-</nav>
+
+  </div>
+  </div>
+  <!-- FORM -->
+  <div class="var">
+    <form id="signinform">
+      <h1>Sign Up</h1>
+
+      <label>Name :</label>
+      <input class="inp" id="entername" type="text" placeholder="Enter Your Name" required
+        style="border: 2px solid black;">
+
+      <label>Email :</label>
+      <input class="inp" id="enteremail" type="email" placeholder="Enter Your Email" required
+        style="border: 2px solid black;">
+
+      <label>Password :</label>
+      <input class="inp" id="enterpss" type="password" placeholder="Enter Password" required
+        style="border: 2px solid black;">
+
+      <label>Confirm Password :</label>
+      <input class="inp" id="enterpssword" type="password" placeholder="Re-enter Password" required
+        style="border: 2px solid black;">
+
+      <label>Contact Number :</label>
+      <input class="inp" id="enterphone" type="number" placeholder="10-digit Mobile Number" required
+        style="border: 2px solid black;">
+      <div style="text-align:center;">
+        <button id="but1" class="sub">
+          Submit</button>
+        <button type="reset" class="sub">Cancel</button>
       </div>
+    </form>
+  </div>
+  <!--FOOTER-->
+  <footer>
+    <div class="hero">
+      <h2>EvenTor</h2>
+      <p>About Us</p>
+      <P>Tearm</P>
+      <P>Contact us</P>
+
     </div>
-    
-      </div>
+    <div class="hero">
+      <h2>Service</h2>
+      <P>Event Management</P>
+      <p>Design & Conecpt</p>
+      <p>Event Production</p>
+      <p>Event Sourcing</p>
     </div>
-     <div class="var">
-     <form style="text-align: center;">
-      <h1>SignUp</h1>
-      <!-- <div class="name"> -->
-        <label for="entername">Enter Your Name:</label>
-        <input type="text"  placeholder="Enter Your Name" required style="border: 2px solid black;"><br><br>
-        
-      <!-- </div> -->
-         <!-- <div class="email"> -->
-        <label for="enteremail">Enter Your Email:</label>
-        <input type="email" placeholder="Enter Your Email" required style="border: 2px solid black;"><br><br>
-      <!-- </div> -->
-        <!-- <div class="phon"> -->
-        <label for="enterphone">Enter Your Contact Number:</label>
-        <input type="email" placeholder="Enter Your Contact Number" required style="border: 2px solid black;"><br><br>
-      <!-- </div> -->
-        <!-- <div class="date1"> -->
-        <label for="date"> Enter Your Booking Date:</label>
-        
-      <input type="text" size="3" placeholder="Day"    style="border: 2px solid black;"/>
-      <input type="text" size="3" placeholder="Month" style="border: 2px solid black;" />
-       <input type="text"  size="5" placeholder="Year" style="border: 2px solid black;" />
-       <i>(DD-MM-YYYY)</i><br>
-       <div class="option"></div>
-          <select>
-              <option> ---- What are you booking the event for? ---- </option>
-                  <option>Birthday party</option>
-                  <option>Engagement ceremony</option>
-                  <option>Wedding</option>
-                  <option>Retirement party</option>
-                  <option>Other</option>
-                    </select>
-                    <br>
-                    <select>
-                          <option> ----- Booking Charging Payment 
-                              Method----- </option>
-                              <option>GOOGLE PAY</option>
-                              <option>PHONE PAY</option>
-                              <option>CASE</option>
-                              <option>UPI</option>
-                              <option>OTHER </option>
-          </select><br>
-      <!-- </div> -->
-      <!-- <div class="btn"> -->
-        <div style="margin-top: 20px;">
-          <!-- <button class="sub">Submit</button> -->
-          <!-- <button class="sub">Cancel</button> -->
-          <a href="index.html" class="sub">Submit</a>
-          <a href="index.html" class="sub">Cancel</a>
-        </div>
-          <!--FOOTER-->
-          <footer>
-            <div class="hero">
-            <h2>EvenTor</h2>
-            <p>About Us</p>
-            <P>Tearm</P>
-            <P>Contact us</P>
-            
-         </div>
-         <div class="hero">
-            <h2>Service</h2>
-            <P>Event Management</P>
-            <p>Design & Conecpt</p>
-            <p>Event Production</p>
-            <p>Event Sourcing</p>
-         </div>
-         <div class="hero">
-            <h2>Social</h2>
-            <p>Facebook</p>
-            <p>Twiter</p>
-            <p>Instagram</p>
-            <p>Linkedin</p>
-         </div>
-         <div class="hero">
-            <h2>Contact US</h2>
-            <p>Mob: 8090998841</p>
-            <p>Email:panditanurag638@gmail.com</p>
-            <p>Address: Ashwan Mishran Rampur Jaunpur Uttar Pardesh</p>
-         </div>
-            <div class="copy">
-            <h3><i>&copy; Copyright Powered by Anurag Mishra Devloper </i></h3>
+    <div class="hero">
+      <h2>Social</h2>
+      <p>Facebook</p>
+      <p>Twiter</p>
+      <p>Instagram</p>
+      <p>Linkedin</p>
     </div>
-          </footer>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
-  </body>
+    <div class="hero">
+      <h2>Contact US</h2>
+      <p>Mob: 8090998841</p>
+      <p>Email:panditanurag638@gmail.com</p>
+      <p>Address: Ashwan Mishran Rampur Jaunpur Uttar Pardesh</p>
+    </div>
+    <div class="copy">
+      <h3><i>&copy; Copyright Powered by Anurag Mishra Devloper </i></h3>
+    </div>
+  </footer>
+  <script>
+  document.getElementById("but1").addEventListener("click", function (event) {
+    event.preventDefault();
+
+    let entername = document.getElementById("entername").value.trim();
+    let enteremail = document.getElementById("enteremail").value.trim();
+    let enterpss = document.getElementById("enterpss").value;
+    let enterpssword = document.getElementById("enterpssword").value;
+    let enterphone = document.getElementById("enterphone").value.trim();
+
+    // Name validation
+    if (entername === "") {
+      alert("Please enter your name");
+      return;
+    }
+
+    // Email validation
+    if (!/\S+@\S+\.\S+/.test(enteremail)) {
+      alert("Please enter a valid email");
+      return;
+    }
+
+    // Password validation
+    if (enterpss.length < 4) {
+      alert("Password must be at least 4 characters");
+      return;
+    }
+
+    if (enterpss !== enterpssword) {
+      alert("Password and Confirm Password do not match");
+      return;
+    }
+
+    // Phone validation
+    if (!/^\d{10}$/.test(enterphone)) {
+      alert("Enter valid 10 digit mobile number");
+      return;
+    }
+
+    // Save data to localStorage
+    localStorage.setItem("name", entername);
+    localStorage.setItem("email", enteremail);
+    localStorage.setItem("password", enterpss);
+    localStorage.setItem("phone", enterphone);
+
+    alert("Registration Successful ✅");
+    window.location.href = "signIn.html";
+  });
+</script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous">
+    </script>
+</body>
+
 </html>
